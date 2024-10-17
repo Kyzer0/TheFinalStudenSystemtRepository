@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> Attendance</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='content/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='content/Login.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='content/create_section.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+</head>
+
+<body style="background-color: #4070f4 ">
+
+
+    <div class="container body-content">
+        {% block content %}{% endblock %}
+        <hr />
+    </div>
+    <footer>
+        <p style="text-align:center">&copy; {{ year }} - My Flask Application</p>
+    </footer>
+
+    <script src="/static/scripts/JSBUNDLE/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/JSBUNDLE/bootstrap.js"></script>
+    <script src="/static/scripts/JSBUNDLE/respond.js"></script>
+    <script src="../static/scripts/index.js"></script>
+    <script src="{{ url_for('static', filename='scripts/index.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/Login.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/create_section.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

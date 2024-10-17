@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <form method="post">
+        <!-- Changed to POST for security -->
+
+        <div class="icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="input-tab">
+            <label for="teacherId">Teacher's ID</label>
+            <input type="text" id="teacherId" required> <!-- Added ID and required -->
+        </div>
+        <div class="input-tab">
+            <label for="password">Password</label>
+            <input type="password" id="password" required> <!-- Added ID and required -->
+        </div>
+
+        <div class="btn">
+            <button type="submit">Log in</button> <!-- Added type="submit" -->
+        </div>
+
+    </form>
+</div>
+
+
+{% endblock %}

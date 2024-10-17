@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="container">
+    <form method="post">
+        
+
+        <div class="icon">
+            <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="input-tab">Section Name</label>
+            <input type="text" id="Section_Name" required>
+        </div>
+
+        <div class="input-tab">
+            <label for="password">Student Count</label>
+            <input type="text" id="stu_count" required> 
+        </div>
+
+        <div class="btn">
+            <button type="submit">Log in</button> 
+        </div>
+
+    </form>
+</div>
+
+
+{% endblock %}
